@@ -1,6 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    /* Use border box to control box model sizes instead of margin, padding, and borders adding to the size of boxes  */
+    box-sizing: border-box;
+    border: solid white 1px;
+  }
+
+#banner {
+    width: 800px;
+    margin: 50px auto;
+}
+
 body {
     background-color: black;
     text-align: center;
+    
 }
 h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -19,19 +34,37 @@ p {
     color: aquamarine;
     font-size: 16px;
 }
+
+#links {
+    margin: 1.5em 0;
+}
 a {
     color: white;
     padding: 25px;
+    
 }
 #remember_excursions {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 21px;
     color: gray;
 }
+#image_me {
+    /* hide the element but leave it on the page*/
+    /*visibility: hidden;*/
+
+    /*completely remove the element from the page (will cause elements to shift)*/
+    /*display: none;*/
+
+    width: 500px;
+    margin:20px auto;
+
+}
 img {
     border-radius: 15%;
+    /* center image by using width and margin together  */
     width: 400px;
-    margin: 0 auto;
+    
+    max-width: 600px;
 }
 footer p {
     text-align: right;

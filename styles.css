@@ -4,35 +4,39 @@
 
     /* Use border box to control box model sizes instead of margin, padding, and borders adding to the size of boxes  */
     box-sizing: border-box;
-    border: solid white 1px;
+    /*border: solid white 1px;*/
+  }
+  html {
+      margin: 0 auto;
   }
 
 #banner {
-    width: 800px;
-    margin: 50px auto;
+    width: 95%;
+    margin: 3rem auto;
 }
 
 body {
     background-color: black;
     text-align: center;
+
     
 }
 h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: normal;
-    font-size: 50px;   
+    font-size: 6vw; 
     color: white;
     /*border-style: solid;*/
 }
 h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 300;
-    font-size: 38px;
+    font-size: 4vw;
     color: white;
 }
 p {
     color: aquamarine;
-    font-size: 16px;
+    font-size: 2vw;
 }
 
 #links {
@@ -51,22 +55,35 @@ a {
 #image_me {
     /* hide the element but leave it on the page*/
     /*visibility: hidden;*/
+    width: 35%;
+    margin: 0 auto;
 
-    /*completely remove the element from the page (will cause elements to shift)*/
-    /*display: none;*/
 
-    width: 500px;
-    margin:20px auto;
+
+    
+    
 
 }
 img {
     border-radius: 15%;
+    width: 100%;
+    height: auto;
     /* center image by using width and margin together  */
-    width: 400px;
     
-    max-width: 600px;
+    
+
 }
 footer p {
     text-align: right;
     color: gray;
+}
+@media screen and (max-width: 500px) {
+    #image_me {
+        /* hide the element but leave it on the page*/
+        /*visibility: hidden;*/
+        width: 35%;
+        margin: 0 auto;
+        text-align: center;
+
+    }
 }

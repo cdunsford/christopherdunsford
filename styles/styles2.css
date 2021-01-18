@@ -1,0 +1,30 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 10vw 30vw 10vw;
+    grid-gap: 1em;
+    margin: 0 auto;
+    max-width: 75em;
+    padding: 1em 0;
+    background-color: black;
+}
+
+
+header,
+main,
+aside,
+footer {
+  background: #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header, footer {
+    grid-column: 1 /span 2;
+    
+}

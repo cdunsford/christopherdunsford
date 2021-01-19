@@ -42,3 +42,28 @@ li {
     display: inline-block;
     padding: 1em;
 }
+nav, footer {
+    background-color: lightgreen;
+}
+main {
+    display:block;
+    background-image: url("../images/zeros_and_ones2.jpg");
+    background-size: cover;
+    color: whitesmoke;
+
+}
+h2 {
+
+    width: 100%;
+    font-family: 'Gochi Hand', cursive;
+    text-align: center;
+    font-size: 7em;
+    margin-top: 150px;
+
+}
+main p {
+
+    font-size: 2em;
+    text-align:center ;
+
+}

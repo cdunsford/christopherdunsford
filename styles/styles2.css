@@ -5,7 +5,7 @@ body {
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 75% 25%;
-    grid-template-rows: 10vw 30vw 10vw;
+    grid-template-rows: 10vw 5vw 30vw 10vw;
     grid-gap: 1em;
     margin: 0 auto;
     max-width: 75em;
@@ -15,6 +15,7 @@ body {
 
 
 header,
+nav,
 main,
 aside,
 footer {
@@ -24,7 +25,20 @@ footer {
   justify-content: center;
 }
 
-header, footer {
+header, nav, footer {
     grid-column: 1 /span 2;
     
+}
+ul {
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    
+}
+h1 {
+    font-size: 4em;
+}
+li {
+    display: inline-block;
+    padding: 1em;
 }

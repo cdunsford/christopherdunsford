@@ -4,7 +4,7 @@ html {
 body {
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: 75% 25%;
+    grid-template-columns: 90% 10%;
     grid-template-rows: 10vw 5vw 30vw 3vw;
 
     margin: 0 auto;
@@ -65,5 +65,33 @@ main p {
 
     font-size: 2em;
     text-align:center ;
+
+}
+aside {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:lightgreen
+
+}
+.icon {
+    flex-wrap: wrap;
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 75px;
+    height: 100px;
+
+}
+.div1 {
+    background-image: url("../images/icon-html.png");
+
+}
+.div2 {
+    background-image: url("../images/icon-css.png");
+
+}
+.div3 {
+    background-image: url("../images/icon-js.png");
 
 }

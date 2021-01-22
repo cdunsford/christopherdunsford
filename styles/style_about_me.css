@@ -1,0 +1,107 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 90% 20%;
+    grid-template-rows: 10vw 5vw 30vw 3vw;
+
+    margin: 0 auto;
+    max-width: 75em;
+    padding: 1em 0;
+    background-color: black;
+}
+
+
+header,
+nav,
+aside,
+footer {
+  background: #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+    grid-column: 1 /span 2;   
+}
+nav, footer {
+    grid-column: 1 /span 2;   
+}
+ul {
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    
+}
+h1 {
+    font-size: 4em;
+}
+li {
+    display: inline-block;
+    padding: 1em;
+    font-size: 1.2em;
+}
+a {
+    text-decoration: none;
+    padding: 1.2em;
+}
+a:hover {
+    background-color:limegreen;
+}
+nav, footer {
+    background-color: lightgreen;
+}
+main {
+    /*display:block;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/zeros_and_ones2.jpg");
+    background-size: cover;*/
+    background: #eaeaea;
+    
+
+
+}
+
+h2 {
+    display: inline-block;
+    width: 90%;
+    border-bottom: 2px dotted black;
+    font-size: 2.5em;
+    padding: 20px 0 30px 15px;
+    margin-left: 15px;
+}
+main p {
+    font-size: 2em;
+}
+aside {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:lightgreen
+
+}
+.icon {
+    flex-wrap: wrap;
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 75px;
+    height: 100px;
+
+}
+.div1 {
+    background-image: url("../images/icon-html.png");
+
+}
+.div2 {
+    background-image: url("../images/icon-css.png");
+
+}
+.div3 {
+    background-image: url("../images/icon-js.png");
+
+}

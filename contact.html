@@ -25,40 +25,37 @@
     </nav>
 
     <main>
-        <h2>My Projects</h2>        
-        <p id="about-my-projects">Feel free to reach out to me to discuss your ideas and how I can help.
-        </p>
-        
-        <h3>The Christopher Dunsford Portfolio Site</h3>
-        <a href="https://github.com/cdunsford/christopherdunsford" target="_blank">https://github.com/cdunsford/christopherdunsford</a>
-        <img src="./images/portfolio-site-image.PNG" alt="Picture of Christopher's portfolio site" id="site-images">
-        <p id="my-portfolio-site">
-            You are currently visiting one of my latest projects. This site serves as my portfolio site to not only serve as a way for you to contact me but also is a way 
-            for me to showcase my skills. This site uses vanilla HTML, CSS, and Javascript. There is currently no framworks in use (such as Boootstrap).
-            I use CSS grids for page layouts. I use CSS flexboxes for content layout. I call out with a social media Javascript link to link my LinkedIn 
-            page. 
-            
-        </p>
-
-        <h3>Tea Cozy</h3>
-        <a href="https://cdunsford.github.io/teacozy2/" target="_blank">https://cdunsford.github.io/teacozy2/</a>
-        <img src="./images/teacozy-image.PNG" alt="Picture of Tea Cozy site" id="site-images">
-        <p id="teacozy-project">
-            Tea Cozy is a project that all CodeCademy (http://www.codecademy.com) students in the Web Development or Full Stack Development track must code.  
-            The main idea is to work with page layout using css Flexbox. I did so and I also incorporated responsive design patterns such as using 
-            media queries to make the site mobile friendly.
-        </p>
-        
-        <h3>Stuffed Animal Task List</h3>
-        <a href="https://cdunsford.github.io/stuffedanimaltasklist/index.html" target="_blank">https://cdunsford.github.io/stuffedanimaltasklist/</a>
-        <img src="./images/stuffed-animal-project.PNG" alt="Picture of Stuffed Animal Site" id="site-images">
-        <p id="stuffed-animal-project">
-            This site is a simple one. I used it to work on the CSS grid technique. There is no functionality incorporated. The idea is from Code Cademy (http://www.codecademy.com)
-        </p>
-
-
-
-        
+        <div class="contact-me"><h2>Contact Me</h2></div>        
+        <div class="contact-me-description">
+            <p id="contact-me-paragraph-description">Feel free to reach out to me to discuss your ideas and how I can help.
+            </p>
+        </div>
+        <div class="form-area">
+            <form action="" method="post">
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" name="firstName" id="firstName">
+                </div>
+    
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastName" id="lastName">
+                </div>
+    
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+    
+                <div class="form-group">
+                    <label for="message">Message</label>
+    
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div id="status" class="success">Success</div>        
 
     </main>
     <aside>

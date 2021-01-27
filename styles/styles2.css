@@ -124,7 +124,7 @@ aside {
     body {
         
         
-        grid-template-rows: 20vw 15vw 135vw 6vw;
+        grid-template-rows: 20vw 15vw 130vw 6vw;
     
         margin: 0 auto;
         max-width: 75em;
@@ -134,23 +134,35 @@ aside {
     h1 {
         font-size: 2em;
     }
+    h2 {        
+        font-size: 3.5em;
+        text-align: center;
+    }
+    main p {
+    
+        font-size: 1.2em;
+    
+    
+    }
     ul {
         display: none;
     }
     nav {
-        align-items:flex-start;
+        align-items:center;
         justify-content:left;
        
     }
 /* Style The Dropdown Button */
 .dropbtn {
-    background-color:black;;
-    color: white;
-    padding: 20px;
-    font-size: 16px;
+    background-color: lightgreen;
+    color: black;
+    margin-left: 20px;
+    font-size: 1.5em;
     border: none;
     cursor: pointer;
-    opacity: 0.7;
+
+    
+    
         
   }
   

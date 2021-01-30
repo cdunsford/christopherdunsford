@@ -99,11 +99,11 @@ aside {
 }
 @media only screen and (max-width: 800px) {
   body {
-    grid-template-rows: 20vw 15vw 130vw 6vw;
+    grid-template-rows: 15vh 10vh 70vh 6vh;
 
     margin: 0 auto;
     max-width: 75em;
-    padding: 1em 0;
+    padding: 0;
     background-color: black;
   }
   h1 {
@@ -170,5 +170,17 @@ aside {
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {
     background-color: #3e8e41;
+  }
+  .arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    width: 10px;
+    height: 10px;
+  }
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
   }
 }

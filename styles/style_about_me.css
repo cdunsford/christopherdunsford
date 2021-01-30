@@ -114,14 +114,29 @@ aside a:hover {
   margin-top: 40px;
   margin-right: 75px;
 }
+.aside-inline {
+  background: #eaeaea;
+  display: none;
+}
 @media only screen and (max-width: 800px) {
   body {
     grid-template-columns: 100%;
-    grid-template-rows: 20vw 15vw 130vw 20vw 8vw;
+
+    grid-template-rows: 20vh 15vh 225vh 100vh 8vh;
     margin: 0 auto;
     max-width: 75em;
-    padding: 1em 0;
+    padding: 0;
     background-color: black;
+  }
+  aside {
+    display: none;
+  }
+  .aside-inline {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding-top: 15px;
   }
   main {
     display: flex;
@@ -149,6 +164,8 @@ aside a:hover {
   nav,
   footer {
     grid-column: 1 / span 1;
+
+    margin: 0;
   }
   h1 {
     font-size: 2em;
@@ -216,5 +233,17 @@ aside a:hover {
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {
     background-color: #3e8e41;
+  }
+  .arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    width: 10px;
+    height: 10px;
+  }
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
   }
 }

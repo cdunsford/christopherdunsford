@@ -1,18 +1,6 @@
-html {
-    font-family: 'Roboto', sans-serif;
-}
 body {
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: 75% 25%;
-    grid-template-rows: 10vw 5vw 50vw 3vw;
-
-    margin: 0 auto;
-    max-width: 75em;
-    padding: 1em 0;
-    background-color: black;
+  grid-template-columns: 75% 25%;
 }
-
 
 header,
 nav,
@@ -24,108 +12,238 @@ footer {
 }
 
 header {
-    grid-column: 1 /span 2;   
+  grid-column: 1 / span 2;
 }
-nav, footer {
-    grid-column: 1 /span 2;   
+nav,
+footer {
+  grid-column: 1 / span 2;
+}
+.dropdown {
+  display: none;
 }
 ul {
-    width: 100%;
-    display: flex;
-    justify-content:center;
-    
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 h1 {
-    font-size: 4em;
+  font-size: 4em;
 }
 li {
-    display: inline-block;
-    padding: 1em;
-    font-size: 1.2em;
+  display: inline-block;
+  padding: 1em;
+  font-size: 1.2em;
 }
 a {
-    text-decoration: none;
-    padding: 1.2em;
+  text-decoration: none;
+  padding: 1.2em;
 }
 a:hover {
-    background-color:limegreen;
+  background-color: limegreen;
 }
-nav, footer {
-    background-color: lightgreen;
+nav,
+footer {
+  background-color: lightgreen;
 }
 main {
-    /*display:block;
+  /*display:block;
     display: flex;
     flex-direction: column;
     background-image: url("../images/zeros_and_ones2.jpg");
     background-size: cover;*/
-    background: #eaeaea;
-    
-
-
+  background: #eaeaea;
 }
 
 h2 {
-    display: inline-block;
-    width: 90%;
-    border-bottom: 2px dotted black;
-    font-size: 2.5em;
-    padding: 20px 0 30px 15px;
-    margin-left: 15px;
+  display: inline-block;
+  width: 90%;
+  border-bottom: 2px dotted black;
+  font-size: 2.5em;
+  padding: 20px 0 30px 15px;
+  margin-left: 15px;
 }
 h3 {
-    display: inline-block;
-    margin: 50px 0 15px 15px;
-    font-size: 1.5em;
-    
-    margin-left: 15px;
+  display: inline-block;
+  margin: 50px 0 15px 15px;
+  font-size: 1.5em;
+
+  margin-left: 15px;
 }
 #about-me {
-    margin-top: 50px;
-    font-size: 1em;
-    line-height: 1.5em;
-    margin-left: 25px;
+  margin-top: 50px;
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-left: 25px;
 }
-#app-dev-role, #freelance-consultant{
-
-    font-size: 1em;
-    line-height: 1.5em;
-    margin-left: 25px;
-    margin-right: 15px;
+#app-dev-role,
+#freelance-consultant {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-left: 25px;
+  margin-right: 15px;
 }
 aside {
-    background: #eaeaea;
-    display: flex;
-    flex-direction: column; 
-    padding-left: 20px;
-    justify-content: space-around;
-    
-    border-left: 2px dotted black;
+  background: #eaeaea;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  justify-content: space-around;
 
-
+  border-left: 2px dotted black;
 }
 
 aside a {
-    padding: 0;
+  padding: 0;
 }
 aside a:hover {
-    background-color:#eaeaea;;
+  background-color: #eaeaea;
 }
 
 #github-img {
-    width: 250px;
-    height: auto;
-    margin: 0;
-    padding: 0;
-
+  width: 250px;
+  height: auto;
+  margin: 0;
+  padding: 0;
 }
 
 #my-face {
-    float: right;
+  float: right;
+  width: 200px;
+  height: auto;
+  border-radius: 15%;
+  margin-top: 40px;
+  margin-right: 75px;
+}
+.aside-inline {
+  background: #eaeaea;
+  display: none;
+}
+@media only screen and (max-width: 800px) {
+  body {
+    grid-template-columns: 100%;
+
+    grid-template-rows: 20vh 15vh 225vh 100vh 8vh;
+    margin: 0 auto;
+    max-width: 75em;
+    padding: 0;
+    background-color: black;
+  }
+  aside {
+    display: none;
+  }
+  .aside-inline {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding-top: 15px;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+  .my-face {
+    margin-top: 20px;
+  }
+  #my-face {
     width: 200px;
     height: auto;
     border-radius: 15%;
-    margin-top: 40px;
-    margin-right: 75px;
-    
+
+    margin: auto;
+  }
+
+  #about-me {
+    display: block;
+  }
+  header {
+    grid-column: 1 / span 1;
+  }
+  nav,
+  footer {
+    grid-column: 1 / span 1;
+
+    margin: 0;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 3.5em;
+    text-align: center;
+    width: 75%;
+  }
+  main p {
+    font-size: 1.2em;
+  }
+
+  ul {
+    display: none;
+  }
+  nav {
+    align-items: center;
+    justify-content: left;
+  }
+  /* Style The Dropdown Button */
+  .dropbtn {
+    background-color: lightgreen;
+    color: black;
+    margin-left: 20px;
+    font-size: 1.5em;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+  .arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    width: 10px;
+    height: 10px;
+  }
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
 }

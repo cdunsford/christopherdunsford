@@ -6,7 +6,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Roboto:ital,wght@0,400;0,900;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link rel="stylesheet" href="./styles/style_common.css">
     <link rel="stylesheet" href="./styles/style_about_me.css">
+
     <script src="./scripts/script.js" async defer></script>
     <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
     <title>Christopher M Dunsford</title>
@@ -22,11 +24,22 @@
             <li><a href="projects.html">Projects</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
+        <div class="dropdown">
+            <button class="dropbtn">View <i class="arrow down"></i></button>
+            <div class="dropdown-content">
+                <a href="index2.html">Home</a>
+                <a href="about_me.html">About Me</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+          </div>
     </nav>
 
     <main>
         <h2>About Me</h2>
-        <img src="./images/me2.png" alt="Picture of Christopher Dunsford" id="my-face">
+        <div class="my-face">
+            <img src="./images/me2.png" alt="Picture of Christopher Dunsford" id="my-face">
+        </div>
         <p id="about-me">Hello there! My name is Christopher Dunsford. I am an Application Development Manager, Freelance Consultant, and avid Computer Programmer</p>
         <h3>Application Development Manager</h3>
         <p id="app-dev-role">I manage a team of developers at Brandt Infomation Systems in Tallahassee, FL. This includes conducting performance reviews, coaching, running scrum meetings, and more.
@@ -47,8 +60,12 @@
         <a href="https://github.com/cdunsford" target="_blank"><img id="github-img" src="./images/github.PNG" alt=""></a>
         
     </aside>
+    <div class="aside-inline">
+        <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="christopher-dunsford-3a6a7b50"><a class="LI-simple-link" href='https://www.linkedin.com/in/christopher-dunsford-3a6a7b50?trk=profile-badge'>Christopher Dunsford</a></div>
+        <a href="https://github.com/cdunsford" target="_blank"><img id="github-img" src="./images/github.PNG" alt=""></a>
+    </div>
     <footer>
-        <p>@copyright 2020 - 2021, Last update January 2021</p>
+        <p>&#169 2020 - 2021, Last update January 2021</p>
     </footer>
 
     

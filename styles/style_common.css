@@ -1,12 +1,3 @@
 html {
   font-family: "Roboto", sans-serif;
 }
-body {
-  box-sizing: border-box;
-  display: grid;
-  grid-template-rows: 10vw 5vw 50vw 3vw;
-  margin: 0 auto;
-  max-width: 75em;
-  padding: 1em 0;
-  background-color: black;
-}

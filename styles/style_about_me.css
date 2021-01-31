@@ -1,5 +1,12 @@
 body {
   grid-template-columns: 75% 25%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: 15vh 11vh 120vh 6vh;
+  margin: 0 auto;
+  max-width: 75em;
+  padding: 1em 0;
+  background-color: black;
 }
 
 header,

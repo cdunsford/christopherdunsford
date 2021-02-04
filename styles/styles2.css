@@ -1,8 +1,7 @@
 html {
   font-family: "Roboto", sans-serif;
 }
-body {
-}
+
 body {
   box-sizing: border-box;
   display: grid;
@@ -110,6 +109,7 @@ aside {
 }
 @media only screen and (max-width: 800px) {
   body {
+    grid-template-columns: 5% 90% 5%;
     grid-template-rows: 15vh 10vh 70vh 6vh;
 
     margin: 0 auto;
